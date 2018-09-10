@@ -28,23 +28,23 @@ To watch the typescript files you can use `nodemon`, if you don't have `nodemon`
 
 ## File Structure
 ```
-	- app
-		- interfaces (interfaces gives better intellisense and strong type)
-			- utils (typescript interfaces for utils goes here)
-		- models.ts (interfaces for model goes here)
-		- middlewares (middlewares go here)
-		- models (add models here, it should contain .model at the end of the file)
-		- modules
-			- some_module (modules go here, it should be abstracted as domain)
-				- some_module.controller.ts
-				- some_module.route.ts
-				- some_module.unit.spec.ts
-	- config (Config related stuff)
-	- scripts (deployment/packaging related stuff)
-	- types (When types for certain package doesn't exist, add that package here)
-	- utils (Utilities and helpers
-	server.ts
-	package.json
+- app
+	- interfaces (interfaces gives better intellisense and strong type)
+		- utils (typescript interfaces for utils goes here)
+	- models.ts (interfaces for model goes here)
+	- middlewares (middlewares go here)
+	- models (add models here, it should contain .model at the end of the file)
+	- modules
+		- some_module (modules go here, it should be abstracted as domain)
+			- some_module.controller.ts
+			- some_module.route.ts
+			- some_module.unit.spec.ts
+- config (Config related stuff)
+- scripts (deployment/packaging related stuff)
+- types (When types for certain package doesn't exist, add that package here)
+- utils (Utilities and helpers
+server.ts
+package.json
 ```
 
 ## Adding New Package
