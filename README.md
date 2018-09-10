@@ -1,6 +1,6 @@
-# key-microservice
+# pin-microservice
 
-ThinBlock's Key API is built on restify framework. It depends on NodeJS server `v8.11.2` and tests are written with `chai` and runner is `mocha`. The database is MongoDb with mongoose ORM. We use TypeScript langauge to write strongly typed code which has less chances of breaking and better intellisense support in VS Code.
+ThinBlock's Pin API is built on restify framework. It depends on NodeJS server `v8.11.2` and tests are written with `chai` and runner is `mocha`. The database is MongoDb with mongoose ORM. We use TypeScript langauge to write strongly typed code which has less chances of breaking and better intellisense support in VS Code.
 
 ## Installation
 We use `yarn` to install the packages. Do

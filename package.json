@@ -1,11 +1,11 @@
 {
-  "name": "key-microservice",
-  "description": "ThinBlock's Key API based on Restify",
+  "name": "pin-microservice",
+  "description": "ThinBlock's Pin API based on Restify",
   "version": "1.0.0",
   "author": "Abdullah Tariq",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thinblock/jey-microservice"
+    "url": "https://github.com/thinblock/pin-microservice"
   },
   "engines": {
     "node": "8.11.2"
