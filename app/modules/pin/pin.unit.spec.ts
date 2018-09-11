@@ -107,6 +107,10 @@ describe('Unit Testing', () => {
       it('should save pin successfully', (done) => {
         sandbox
           .mock(Pin)
+          .expects('findOne')
+          .resolves(null);
+        sandbox
+          .mock(Pin)
           .expects('create')
           .resolves(pinReturn);
         supertest(app)
@@ -121,7 +125,28 @@ describe('Unit Testing', () => {
             }
           });
       });
+      it('should throw 400 if number already exists', (done) => {
+        sandbox
+          .mock(Pin)
+          .expects('findOne')
+          .resolves(pinReturn);
+        supertest(app)
+          .post('/api/pins')
+          .send(pinObj)
+          .end((err: any, res: supertest.Response) => {
+            if (err) {
+              done(err);
+            } else {
+              expect(res.status).to.equal(400);
+              done();
+            }
+          });
+      });
       it('should throw 500 if server error while writing db', (done) => {
+        sandbox
+          .mock(Pin)
+          .expects('findOne')
+          .resolves(null);
         sandbox
           .mock(Pin)
           .expects('create')

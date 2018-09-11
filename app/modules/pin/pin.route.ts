@@ -9,13 +9,13 @@ class PinRoute implements IRoute {
     return [
       {
         method: HttpMethods.POST,
-        auth: AuthStrategies.PUBLIC,
+        auth: AuthStrategies.OAUTH,
         handler: this.controller.post,
       },
       {
         method: HttpMethods.GET,
         param: 'phone',
-        auth: AuthStrategies.PUBLIC,
+        auth: AuthStrategies.OAUTH,
         handler: this.controller.get,
       }
     ];

@@ -7,7 +7,8 @@ const PinsSchema = new Schema({
   },
   phone: {
     type: String,
-    required: true
+    required: true,
+    unique: true
   },
   created_at: { type: Date, default: Date.now },
   updated_at: { type: Date, default: Date.now },
